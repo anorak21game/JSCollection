@@ -1,0 +1,28 @@
+New File
+index.js
+// Terminal$> .../npm run test
+// quit npm Strg^C
+
+Terminal$>npm init
+Terminal$>npm install nodemon
+
+package.json
+{
+  "name": "template", 
+  "version": "1.0.0",
+  "description": "I'm a template!",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "Michael Wirth",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
+
+New File
+.gitignore
+node_modules
+

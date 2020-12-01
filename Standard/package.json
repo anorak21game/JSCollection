@@ -1,0 +1,14 @@
+{
+  "name": "es6-script",
+  "version": "1.0.0",
+  "description": "ES6 Cheat Sheet",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "Michael Wirth",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "abstractclass",
+  "version": "1.0.0",
+  "description": "Template vor Snippets",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "devDependencies": {},
+  "author": "Michael Wirth",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
+
