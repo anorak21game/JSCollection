@@ -17,7 +17,7 @@ class ConcreteClass extends AbstractClass {
     static foo() {
     // Calls Abstract.foo();
     // super.foo();
-        console.log("static metod foo");
+        console.log("method static foo");
     // Implementation of abstract static method.
     }
     constructor() {
