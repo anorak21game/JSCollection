@@ -1,0 +1,45 @@
+npm init
+
+Install yarn:
+sudo npm install -g yarn
+
+Install flow:
+yarn add --dev @babel/core @babel/cli @babel/preset-flow
+
+Create .babelrc file!
+
+.babelrc
+{
+  "presets": ["@babel/preset-flow"]
+}
+
+If you then put all your source files in a src directory you can compile them to another directory by running:
+
+Create a lib and src folder!
+yarn run babel src/ -d lib/
+
+You can add this to your package.json scripts easily:
+{
+  "name": "my-project",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build"
+  }
+}
+
+sudo snap install flow --classic
+
+Add a devDependency on the flow-bin npm package:
+
+yarn add --dev flow-bin
+
+Run Flow:
+
+yarn run flow
+
+flow init
+flow status
+
+src/index.js
+// @flow

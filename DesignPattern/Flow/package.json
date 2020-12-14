@@ -1,0 +1,22 @@
+{
+  "name": "flow",
+  "version": "1.0.0",
+  "description": "Test Case with Flow",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build"
+  },
+  "author": "Michael Wirth",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-flow": "^7.12.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0"
+  },
+  "dependencies": {
+    "flow-bin": "^0.140.0"
+  }
+}
