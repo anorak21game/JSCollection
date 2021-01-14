@@ -1,26 +1,35 @@
-function displayDate() {
-    document.getElementById("display").innerHTML = Date();
+const tabs = document.querySelector(".tabs");
+const tabsBtns = tabs.querySelectorAll(".tabs__btn");
+const tabsContents = tabs.querySelectorAll(".tabs__content");
+
+function displayCurrentTab(current) {
+  for (let i = 0; i < tabsContents.length; i++) {
+    tabsContents[i].style.display = (current === i) ? "block" : "none";
+  }
 }
+displayCurrentTab(0);
 
-// console.clear();
-
-const buttons = Array.from(document.querySelectorAll("button"));
-
-buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-        btn.classList.toggle("active");
-    });
+tabs.addEventListener("click", event => {
+  if (event.target.className === "tabs__btn") {
+    for (let i = 0; i < tabsBtns.length; i++) {
+      if (event.target === tabsBtns[i]) {
+        displayCurrentTab(i);
+        break;
+      }
+    }
+  }
 });
 
-// var display = document.getElementById("controller");
-// var buttons = display.getElementsByClassName("button");
-// for (var i = 0; i < buttons.length; i++) {
-//   buttons[i].addEventListener("click", function() {
-//   var current = document.getElementsByClassName("active");
-//   current[0].className = current[0].className.replace(" active", "");
-//   this.className += " active";
-//   });
-// }
+// const buttons = Array.from(document.querySelectorAll("button"));
+
+// buttons.forEach(btn => {
+//     btn.addEventListener("click", () => {
+//         btn.classList.toggle("active");
+//     });
+// });
+
+
+
 
 // const SETTINGS = {
     
