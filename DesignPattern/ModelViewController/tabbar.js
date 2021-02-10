@@ -1,4 +1,4 @@
-class Model {
+class TabbarModel {
     constructor() {
         this.tabs = JSON.parse(localStorage.getItem('tabs'))
     }
@@ -47,20 +47,36 @@ class Model {
     }
   }
   
-  class View {
-    constructor() {
-        this.app = this.getElement('#root')
-        this.tabList = this.createElement('ul', 'tab-list')
-        this.tab = this.createElement('button')
-        this.tab.textContent = 'Task'
-    }
+class TabbarView {
+  constructor() {
+      this.tabbar = this.getElement('#tabbar')
+      this.tab = this.createElement('button')
+      this.tab.textContent = 'Topic'
+      this.tabbar.append(this.tab)
   }
-  
-  class Controller {
-    constructor(model, view) {
-      this.model = model
-      this.view = view
-    }
+
+  createElement(tag, className) {
+    const element = document.createElement(tag)
+
+    if (className) element.classList.add(className)
+
+    return element
   }
-  
-  const app = new Controller(new Model(), new View())
+
+  getElement(selector) {
+    const element = document.querySelector(selector)
+
+    return element
+  }
+}
+
+class TabbarController {
+  constructor(model, view) {
+    this.model = model
+    this.view = view
+
+    // this.model.bindTabListChanged(this.)
+  }
+}
+
+const tabbar = new TabbarController(new TabbarModel(), new TabbarView())
