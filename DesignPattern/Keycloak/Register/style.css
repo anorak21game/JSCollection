@@ -1,0 +1,89 @@
+/* Card */
+
+.register {
+    font-family: 'Open Sans', sans-serif;
+    color: #00647e;
+    text-align: center;
+    max-width: 576px;
+}
+
+/* Local */
+
+.local {
+    /* empty */
+}
+
+.local__dropdown--right {
+    /* empty */
+}
+
+/* Form */
+
+.form {
+    /* empty */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group__input {
+    height: 43px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #fff;
+    color: rgba(51, 51, 51, 0.53);
+    font-size: 15px;
+
+    /* delete default input styling */
+    /* border: none;*/
+    outline: none; 
+    min-width: auto;
+}
+
+.input-group__input--distance-below {
+    margin-bottom: 30px;
+}
+
+/* Button */
+
+.btn--primary {
+    display: flex;
+    flex-direction: column;
+
+    
+    border-radius: 20px;
+    background-color: #00647e;
+}
+
+.btn--primary__body {
+    display: flex;
+    flex-direction: column;
+
+    /* height: 43px; */
+    padding: 10px 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and (min-with: 479px) {
+    
+    /* Button */
+
+    .btn--primary {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .register {
+        padding: 15px 15px 80px;
+    }
+}

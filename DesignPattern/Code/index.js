@@ -1,8 +1,8 @@
 // CODE CHALLENGE
 
-let newPanel = 9;
+let newPanel = "CollapsePanel-9";
 const openPanels = 3;
-let panels = [1, 1, 7, 8, 1, 7, 3, 9, 2, 15]; 
+let panels = ["CollapsePanel-1", "CollapsePanel-1", "CollapsePanel-2", "CollapsePanel-5", "CollapsePanel-15"]; 
 
 
 // delete duplicate panels
