@@ -1,0 +1,101 @@
+/* Body and Page setting */
+
+.login-pf body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background: #fff;
+}
+
+.login-pf-page {
+    padding-top: 0;
+}
+
+.card-pf {
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: none;
+}
+
+/* Realm Name */
+
+/* hide the realm name */
+#kc-header {
+    display: none; 
+}
+
+
+/* Page title */
+
+#kc-page-title {
+    font-size: 30;
+    font-weight: 700;
+    color: #00647e;
+}
+
+/* Alert */
+
+.pf-c-alert {
+    margin-bottom: 15px;
+}
+
+/* Form */
+
+.pf-c-form__label-text {
+    padding-bottom: 5px;
+}
+
+.pf-c-form-control {
+    min-height: 28px;
+    border: 1px solid #555;
+    border-radius: 2px;     
+}
+
+.pf-c-form-control:focus {
+    outline: none;  
+
+    min-height: 28px;
+    border: 1px solid #555;
+    border-radius: 2px;
+}
+
+/* Button */
+
+.pf-c-button.pf-m-primary {
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #00647e;
+}
+
+.pf-c-button.pf-m-primary:hover {
+    background-color: #3e3e3e;
+}
+
+.pf-c-button.pf-m-primary:focus {
+    background-color: #3e3e3e;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 10px 8px 8px;
+    font-size: 18px;
+}
+
+/* not a full width
+.pf-c-button.pf-m-block {
+width: max-content;
+}
+*/
+
+/* Info */
+
+#kc-info {
+    margin: 0;
+    font-size: 15px;
+    color: #555;
+}
+
+#kc-info-wrapper {
+    font-size: 15px;
+    padding: 15px 35px;
+    background-color: none;
+}

@@ -18,8 +18,8 @@
                 </div>
 
                 <div class="${properties.kcFormGroupClass!}">
-                    <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
-                    <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off" />
+                    <!-- <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label> -->
+                    <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" placeholder="${msg("password")}" autocomplete="off" />
                 </div>
 
                 <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
