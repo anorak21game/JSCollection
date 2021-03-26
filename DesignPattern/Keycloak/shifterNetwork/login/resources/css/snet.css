@@ -13,21 +13,22 @@
 .card-pf {
     max-width: 500px;
     margin: 0 auto;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 /* Realm Name */
 
-/* hide the realm name */
 #kc-header {
-    display: none; 
+    font-size: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px 40px 0px 40px;
 }
-
 
 /* Page title */
 
 #kc-page-title {
-    font-size: 30;
     font-weight: 700;
     color: #00647e;
 }
@@ -79,12 +80,6 @@
     padding: 10px 8px 8px;
     font-size: 18px;
 }
-
-/* not a full width
-.pf-c-button.pf-m-block {
-width: max-content;
-}
-*/
 
 /* Info */
 
