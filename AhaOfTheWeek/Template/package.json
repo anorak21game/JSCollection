@@ -2,9 +2,9 @@
   "name": "objects",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "nodemon main.js"
   },
   "author": "Michael Wirth",
   "license": "ISC",
