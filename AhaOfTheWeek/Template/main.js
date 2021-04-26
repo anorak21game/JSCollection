@@ -3,7 +3,7 @@
 /* chapter */
 console.log("\n---------------------------------------------------------------");
 console.log('%cHEADLINE: %cSubline', 'color: blue', 'color: green');
-console.log("---------------------------------------------------------------\n");
+console.log("\n");
 
 // some code
 
