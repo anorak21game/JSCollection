@@ -1,6 +1,6 @@
 "use strict";
 
-/* chapter */
+/* next section */
 console.log("\n---------------------------------------------------------------");
 console.log('%cHEADLINE: %cSubline', 'color: blue', 'color: green');
 console.log("\n");

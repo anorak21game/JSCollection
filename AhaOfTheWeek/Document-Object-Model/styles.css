@@ -64,9 +64,9 @@ hr {
     background: #484848;
 }
 
-/* === JUMBOTRON === */
+/* === ARTICLE === */
 
-.jumbotron {
+.article {
     width: 65%;
     margin: 0 auto 3rem;
     padding: 2rem;
@@ -74,12 +74,12 @@ hr {
     border-radius: 4px;
 }
 
-.jumbotron > header > h2 {
+.article > header > h2 {
     font-size: 3.5rem;
     font-weight: 300;
     margin: 2rem 0 0;
 }
 
-.jumbotron > header > p {
+.article > header > p {
     font-size: 1.25rem;
 }

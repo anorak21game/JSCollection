@@ -1,10 +1,11 @@
 "use strict";
 
-/* chapter */
+/* next section */
 console.log("\n---------------------------------------------------------------");
 console.log('%cDOM: %cdocument', 'color: blue', 'color: green');
 console.log("\n");
 
+/*
 console.log(document);
 console.log(document.head);
 console.log(document.body);
@@ -13,17 +14,18 @@ console.log(document.location);
 // console.log(document.location.href = "https://www.google.de");
 console.log(document.URL); // read only
 
-/* chapter */
+/* next section */
 console.log("\n---------------------------------------------------------------");
 console.log('%cDOM: %cselect element', 'color: blue', 'color: green');
 console.log("\n");
 
+/*
 // getElement Methode
 
 let nav = document.getElementById("navigation");
 console.log(nav); 
 
-let jumbo = document.getElementsByClassName("jumbotron");
+let jumbo = document.getElementsByClassName("article");
 console.log(jumbo); 
 console.log(jumbo.length); 
 
@@ -36,21 +38,22 @@ console.log(para.length);
 let navlist = document.querySelector("body > #navigation > ul");
 console.log(navlist);
 
-let firstJumbo = document.querySelector(".jumbotron");
+let firstJumbo = document.querySelector(".article");
 console.log(firstJumbo);
 
 // let nodelist = document.querySelectorAll("body > #navigation > ul > li > a");
 // console.log(nodelist);
 // console.log(nodelist.length);
 
-/* chapter */
+/* next section */
 console.log("\n---------------------------------------------------------------");
 console.log('%cDOM: %cHTML-collection', 'color: blue', 'color: green');
 console.log("\n");
 
+/*
 // HTML-Collection support: for & for-of
 
-let htmlCollection_1 = document.getElementsByClassName("jumbotron");
+let htmlCollection_1 = document.getElementsByClassName("article");
 let htmlCollection_2 = document.getElementsByTagName("li");
 
 console.log(htmlCollection_1);
@@ -76,11 +79,12 @@ for (let e of htmlCollection_2) {
     console.log(e);
 }
 
-/* chapter */
+/* next section */
 console.log("\n---------------------------------------------------------------");
 console.log('%cDOM: %cnodelist', 'color: blue', 'color: green');
 console.log("\n");
 
+/*
 // Nodelist support: for, for-of & for-each
 
 let nodelist = document.querySelectorAll("p");
@@ -105,10 +109,12 @@ nodelist.forEach(function(e) {
     console.log(e);
 });
 
+/* next section */
 console.log("\n---------------------------------------------------------------");
 console.log('%cDOM: %cnavigation', 'color: blue', 'color: green');
 console.log("\n");
 
+/*
 let ul = document.querySelector("#navigation > ul");
 console.log(ul);
 
@@ -160,10 +166,13 @@ let anchor = ul.querySelectorAll("li > a");
 
 console.log(anchor);
 
+
+/* next section */
 console.log("\n---------------------------------------------------------------");
 console.log('%cDOM: %cappend child', 'color: blue', 'color: green');
 console.log("\n");
 
+/*
 let div = document.createElement("div");
 div.setAttribute("id", "my_id");
 div.setAttribute("class", "my_class");
@@ -173,7 +182,7 @@ div.setAttribute("class", "my_class");
 let text = document.createTextNode("APPEND CHILD TEST");
 div.appendChild(text);
 
-let jumbo_section = document.querySelector(".jumbotron > section");
+let jumbo_section = document.querySelector(".article > section");
 jumbo_section.appendChild(div);
 
 let nav_li = document.querySelector("#navigation > ul > li");
@@ -184,11 +193,13 @@ console.log(nav_ul);
 
 nav_ul.appendChild(nav_li);
 
+/* next section */
 console.log("\n---------------------------------------------------------------");
 console.log('%cDOM: %cinnerHTML', 'color: blue', 'color: green');
 console.log("\n");
 
-let jumbo_html = document.querySelector(".jumbotron");
+/*
+let jumbo_html = document.querySelector(".article");
 
 console.log(jumbo_html.innerHTML); // HTML
 console.log(jumbo_html.innerText); // render Text
@@ -201,10 +212,12 @@ let string_4 = "Lorem ipsum doloar sit amet.";
 
 jumbo_html.innerHTML = string_2;
 
+/* next section */
 console.log("\n---------------------------------------------------------------");
 console.log('%cDOM: %cinsertAdjacent', 'color: blue', 'color: green');
 console.log("\n");
 
+/*
 let li_el = document.createElement("li");
 li_el.setAttribute("id", "mein-listenelement");
 
@@ -238,8 +251,149 @@ let text_list = "Lorem ipsum dolor sit amet.";
 // liste.insertAdjacentText("beforeend", text);
 liste.insertAdjacentText("afterend", text_list);
 
+/* next section */
+console.log("\n---------------------------------------------------------------");
+console.log('%cDOM: %cdelete elements', 'color: blue', 'color: green');
+console.log("\n");
 
+// let nav = document.querySelector("#navigation");
+// nav.remove();
 
+// let jumbo = document.querySelectorAll(".article");
+// jumbo.forEach(function(e) {
+//     e.remove();
+// })
+
+/* next section */
+console.log("\n---------------------------------------------------------------");
+console.log('%cDOM: %cID-propertie', 'color: blue', 'color: green');
+console.log("\n");
+
+/*
+let nav = document.querySelector("#navigation");
+let id = nav.id;
+
+// nav.id = "neue-id";
+// console.log(id);
+
+/* next section */
+console.log("\n---------------------------------------------------------------");
+console.log('%cDOM: %cclassName', 'color: blue', 'color: green');
+console.log("\n");
+
+/*
+let article = document.querySelector(".article");
+
+let classes = article.className;
+console.log(classes);
+
+article.className = "meine-class";
+article.className += " article";
+article.className = article.className.replace("meine", "my");
+article.className = article.className.replace("my-class", "");
+
+document.querySelector("#navigation > ul li:first-of-type > a").className = "";
+document.querySelector("#navigation > ul > li:nth-of-type(3) > a").className = "active";
+
+/* next section */
+console.log("\n---------------------------------------------------------------");
+console.log('%cDOM: %cDOMTokenList', 'color: blue', 'color: green');
+console.log("\n");
+
+/*
+let article = document.querySelector(".article");
+let class_list = article.classList;
+console.log(class_list);
+
+article.classList.add("my-class");
+article.classList.replace("my-class", "your-article");
+article.classList.remove("your-article");
+
+console.log(article.classList.contains("article"));
+
+article.classList.toggle("new-class");
+article.classList.toggle("new-class");
+
+/* next section */
+console.log("\n---------------------------------------------------------------");
+console.log('%cDOM: %cattribute', 'color: blue', 'color: green');
+console.log("\n");
+
+/*
+document.querySelector(".article").setAttribute("lang", "de");
+document.querySelector("head > meta:nth-of-type(3)").removeAttribute("content");
+console.log(document.querySelector("html").getAttribute("lang"));
+console.log(document.querySelector("head > link").hasAttribute("rel"));
+
+/* next section */
+console.log("\n---------------------------------------------------------------");
+console.log('%cDOM: %cCSSStyleDeclaration', 'color: blue', 'color: green');
+console.log("\n");
+
+/*
+let article = document.querySelector(".article");
+console.log(article.style);
+
+console.log(article.style.backgroundColor ="blue");
+
+/* next section */
+console.log("\n---------------------------------------------------------------");
+console.log('%cDOM: %cViewport', 'color: blue', 'color: green');
+console.log("\n");
+
+/*
+console.log(window);
+console.log("innerWidth: " + innerWidth);
+console.log("innerHeight: " + innerHeight);
+console.log("outerWidth: " + outerWidth);
+console.log("outerHeight: " + outerHeight);
+console.log("scrollX: " + scrollX);
+console.log("ScrollY: " + scrollY);
+
+console.log(location);
+console.log(localStorage);
+console.log(sessionStorage);
+
+// alert("Achtung");
+// confirm("Bist du dir sicher?");
+// let antwort = prompt("Wie geht es dir?");
+// console.log(antwort);
+// print();
+// open("https://www.google.de");
+// close();
+
+/* next section */
+console.log("\n---------------------------------------------------------------");
+console.log('%cDOM: %cgetComputedStyle', 'color: blue', 'color: green');
+console.log("\n");
+
+/*
+let nav = document.querySelector("#navigation");
+let nav_styles = getComputedStyle(nav);
+console.log(nav_styles);
+
+let article = document.querySelector(".article");
+let article_style = getComputedStyle(article);
+console.log(article_style);
+console.log(article_style.backgroundColor);
+console.log(article_style.fontFamily);
+
+/* next section */
+console.log("\n---------------------------------------------------------------");
+console.log('%cDOM: %clocation', 'color: blue', 'color: green');
+console.log("\n");
+
+console.log(location);
+console.log(location.href);
+console.log(location.protocol);
+console.log(location.hostname);
+console.log(location.pathname);
+console.log(location.search);
+console.log(location.hash);
+
+// location.reload();
+// location.assign("https://www.google.de");
+// location.replace("https://www.google.de");
 
 // Terminal$> .../npm run test
 // quit npm Strg^C
