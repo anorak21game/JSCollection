@@ -75,11 +75,19 @@ hr {
 }
 
 .article > header > h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 300;
     margin: 2rem 0 0;
 }
 
 .article > header > p {
     font-size: 1.25rem;
+}
+
+/* === FORMULAR === */
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
 }

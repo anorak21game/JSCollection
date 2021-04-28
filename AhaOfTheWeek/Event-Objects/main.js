@@ -1,9 +1,7 @@
 "use strict";
 
-/* next section */
-console.log("\n---------------------------------------------------------------");
-console.log('%EVENTS: %cMouse-Events', 'color: blue', 'color: green');
-console.log("\n");
+/* === NEXT SECTION === */
+console.log('\n' + '%cEVENTS: %cMouse-Events', 'color: blue', 'color: green' , '\n');
 
 /*
 let article = document.querySelector(".article");
@@ -35,11 +33,10 @@ article.addEventListener("mouseover", e => {
     console.log(e);
 });
 
-/* next section */
-console.log("\n---------------------------------------------------------------");
-console.log('%EVENTS: %cCapturing and Bubbeling', 'color: blue', 'color: green');
-console.log("\n");
+/* === NEXT SECTION === */
+console.log('\n' + '%cEVENTS: %cCapturing and Bubbeling', 'color: blue', 'color: green' , '\n');
 
+/*
 // capturing phase: Document <html> <body> <ul> <li> <a> 
 // target phase: <a>
 // bubbeling phase: <a> <li> <ul> <body> <html> Document
@@ -67,5 +64,45 @@ el_2_parent.addEventListener("click", e => {
     console.log("el_2_parent hat es mitbekommen!");
 });
 
+/* === NEXT SECTION === */
+console.log('\n' + '%cEVENTS: %cTastatur-Events', 'color: blue', 'color: green' , '\n');
+
+/*
+// document.addEventListener("keydown", e => {
+//     console.log(e);
+//     if(e.key === "@") {
+//         console.log("Das @-Zeichen wurde gedrückt");
+//     }
+// });
+
+document.addEventListener("keyup", e => {
+    console.log(e);
+    if(e.key === "p") {
+        console.log("Das p-Zeichen wurde gedrückt");
+    }
+});
+
+document.addEventListener("keydpress", e => { // dont work shift, Fn and Capslock Key
+    console.log(e);
+    if(e.key === ":") {
+        console.log("Das :-Zeichen wurde gedrückt");
+    }
+});
+
+/* === NEXT SECTION === */
+console.log('\n' + '%cEVENTS: %cFormular-Events', 'color: blue', 'color: green' , '\n');
+
+let formular = document.querySelector("form");
+
+formular.addEventListener("submit", e => {
+    e.preventDefault();
+    console.log(e);
+});
+
+formular.addEventListener("reset", e => {
+    console.log(e);
+});
+
+/* End */
 // Terminal$> .../npm run test
 // quit npm Strg^C

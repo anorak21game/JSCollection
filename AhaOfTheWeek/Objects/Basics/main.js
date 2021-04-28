@@ -1,9 +1,7 @@
 "use strict";
 
-/* next section */
-console.log("\n---------------------------------------------------------------");
-console.log('%cOBJECT: %cStructure', 'color: blue', 'color: green');
-console.log("\n");
+/* === NEXT SECTION === */
+console.log('\n' + '%cOBJECT: %cStructure', 'color: blue', 'color: green', '\n');
 
 /*
 let object = {
@@ -39,10 +37,8 @@ let propertie = "myArray";
 let list = objectOne[propertie];
 console.log(list); // Call by string
 
-/* next section */
-console.log("\n---------------------------------------------------------------");
-console.log('%cOBJECT: %cValue/Reference', 'color: blue', 'color: green');
-console.log("\n");
+/* === NEXT SECTION === */
+console.log('\n' + '%cOBJECT: %cValue/Reference', 'color: blue', 'color: green', '\n');
 
 /*
 let animalValue = "Rabbit";
@@ -61,10 +57,8 @@ hunter(animalValue, object);
 console.log(animalValue); // Call by value
 console.log(object.animalReference); // Call by reference
 
-/* next section */
-console.log("\n---------------------------------------------------------------");
-console.log('%cOBJECT: %cProperties', 'color: blue', 'color: green');
-console.log("\n");
+/* === NEXT SECTION === */
+console.log('\n' + '%cOBJECT: %cProperties', 'color: blue', 'color: green', '\n');
 
 /*
 let object = {
@@ -78,10 +72,8 @@ delete object.c; // delete
 
 console.log(object);
 
-/* next section */
-console.log("\n---------------------------------------------------------------");
-console.log('%cOBJECT: %cNesting', 'color: blue', 'color: green');
-console.log("\n");
+/* === NEXT SECTION === */
+console.log('\n' + '%cOBJECT: %cNesting', 'color: blue', 'color: green', '\n');
 
 /*
 let object = {
@@ -95,10 +87,8 @@ let object = {
 
 console.log(object);
 
-/* next section */
-console.log("\n---------------------------------------------------------------");
-console.log('%cOBJECT: %cConstant', 'color: blue', 'color: green');
-console.log("\n");
+/* === NEXT SECTION === */
+console.log('\n' + '%cOBJECT: %cConstant', 'color: blue', 'color: green', '\n');
 
 /*
 const object = {
@@ -112,10 +102,8 @@ console.log(object);
 
 // objectThree = objectTwo; // TypeError: Assignment to constant variable.
 
-/* next section */
-console.log("\n---------------------------------------------------------------");
-console.log('%cOBJECT: %cReturn value', 'color: blue', 'color: green');
-console.log("\n");
+/* === NEXT SECTION === */
+console.log('\n' + '%cOBJECT: %cReturn value', 'color: blue', 'color: green', '\n');
 
 /*
 let object = {
@@ -134,10 +122,8 @@ let output = function(object) {
 
 console.log(output(object));
 
-/* next section */
-console.log("\n---------------------------------------------------------------");
-console.log('%cOBJECT: %cCompare', 'color: blue', 'color: green');
-console.log("\n");
+/* === NEXT SECTION === */
+console.log('\n' + '%cOBJECT: %cCompare', 'color: blue', 'color: green', '\n');
 
 /*
 let objectOne = {

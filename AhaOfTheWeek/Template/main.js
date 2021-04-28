@@ -1,13 +1,11 @@
 "use strict";
 
-/* next section */
-console.log("\n---------------------------------------------------------------");
-console.log('%cHEADLINE: %cSubline', 'color: blue', 'color: green');
-console.log("\n");
+/* === NEXT SECTION === */
+console.log('\n' + '%cHEADLINE: %cSubline', 'color: blue', 'color: green' , '\n');
 
 // some code
+// next section
 
-// next capture
-
+/* End */
 // Terminal$> .../npm run test
 // quit npm Strg^C
