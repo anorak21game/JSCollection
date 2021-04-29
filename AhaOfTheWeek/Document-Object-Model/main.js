@@ -4,7 +4,7 @@
 
 console.log('\n' + '%cDOM: %cWindow', 'color: blue', 'color: green' , '\n');
 
-// /*
+/*
 console.log(window);
 console.log("innerWidth: " + innerWidth);
 console.log("innerHeight: " + innerHeight);
@@ -62,9 +62,9 @@ console.log(location.pathname);
 
 
 
-/* === NODES === */
+/* === NODELIST === */
 
-console.log('\n' + '%cDOM: %cNodes', 'color: blue', 'color: green' , '\n');
+console.log('\n' + '%cDOM: %cNodelist', 'color: blue', 'color: green' , '\n');
 
 /*
 // get

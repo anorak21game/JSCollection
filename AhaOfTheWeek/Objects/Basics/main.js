@@ -1,6 +1,6 @@
 "use strict";
 
-/* === NEXT SECTION === */
+/* === STRUCTURE === */
 console.log('\n' + '%cOBJECT: %cStructure', 'color: blue', 'color: green', '\n');
 
 /*
@@ -37,7 +37,7 @@ let propertie = "myArray";
 let list = objectOne[propertie];
 console.log(list); // Call by string
 
-/* === NEXT SECTION === */
+/* === VALUE/REFERENCE === */
 console.log('\n' + '%cOBJECT: %cValue/Reference', 'color: blue', 'color: green', '\n');
 
 /*
@@ -57,8 +57,8 @@ hunter(animalValue, object);
 console.log(animalValue); // Call by value
 console.log(object.animalReference); // Call by reference
 
-/* === NEXT SECTION === */
-console.log('\n' + '%cOBJECT: %cProperties', 'color: blue', 'color: green', '\n');
+/* === PROPERTIE === */
+console.log('\n' + '%cOBJECT: %cPropertie', 'color: blue', 'color: green', '\n');
 
 /*
 let object = {
@@ -72,7 +72,7 @@ delete object.c; // delete
 
 console.log(object);
 
-/* === NEXT SECTION === */
+/* === NESTING === */
 console.log('\n' + '%cOBJECT: %cNesting', 'color: blue', 'color: green', '\n');
 
 /*
@@ -87,7 +87,7 @@ let object = {
 
 console.log(object);
 
-/* === NEXT SECTION === */
+/* === CONSTANT === */
 console.log('\n' + '%cOBJECT: %cConstant', 'color: blue', 'color: green', '\n');
 
 /*
@@ -102,7 +102,7 @@ console.log(object);
 
 // objectThree = objectTwo; // TypeError: Assignment to constant variable.
 
-/* === NEXT SECTION === */
+/* === RETURN VALUE === */
 console.log('\n' + '%cOBJECT: %cReturn value', 'color: blue', 'color: green', '\n');
 
 /*
@@ -122,7 +122,7 @@ let output = function(object) {
 
 console.log(output(object));
 
-/* === NEXT SECTION === */
+/* === COMPARE === */
 console.log('\n' + '%cOBJECT: %cCompare', 'color: blue', 'color: green', '\n');
 
 /*

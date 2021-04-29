@@ -1,10 +1,14 @@
 "use strict";
 
-/* === NEXT SECTION === */
+/* === SUBLINE === */
 console.log('\n' + '%cHEADLINE: %cSubline', 'color: blue', 'color: green' , '\n');
 
 // some code
-// next section
+
+
+
+
+// next part
 
 /* End */
 // Terminal$> .../npm run test
