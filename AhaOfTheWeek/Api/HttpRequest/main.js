@@ -57,20 +57,12 @@ console.log('\n' + '%cHTTPREQUEST: %cGet Data', 'color: blue', 'color: green', '
 // /*
 const sendHttpRequest = (method, url, data) => {
     const promise = new Promise((resolve, reject) => {
-        // create XMLHTTPRequest Object
         const xhttp = new XMLHttpRequest();
-        /* 
-        method:
-        GET =  
-        POST = send()
-        
-        */
 
-        // 
         xhttp.open(method, url);
 
         xhttp.responseType = 'json'
-
+        
         if (data) {
             xhttp.setRequestHeader('Content-Type', 'application/json');
         }
