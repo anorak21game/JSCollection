@@ -64,8 +64,8 @@ document.getElementById('getProducts').addEventListener('click', getProducts);
 
 const products_url = 'https://shifter.staging.shiftphones.com:30484/api/products';
 
-async function getProducts() {
-    await fetch(products_url, { mode: 'no-cors' })
+function getProducts() {
+    fetch(products_url, { mode: 'no-cors' })
         .then(res => res.json())
         .then(data => {
             console.table(data);
