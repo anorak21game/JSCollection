@@ -1,0 +1,14 @@
+{
+  "name": "soliddesignprinciples",
+  "version": "1.0.0",
+  "description": "SOLID Design Principles",
+  "main": "SingleResponsibilityPrinciple.js",
+  "scripts": {
+    "srp": "nodemon SingleResponsibilityPrinciple.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

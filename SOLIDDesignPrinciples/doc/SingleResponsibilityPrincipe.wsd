@@ -1,0 +1,11 @@
+@startuml
+class Journal {
+ -addEntry()
+ -removeEntry()
+ -toString()
+}
+class PersistenceManager {
+ -preprocess()
+ -saveToFile()
+}
+@enduml
