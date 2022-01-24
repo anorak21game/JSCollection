@@ -4,7 +4,11 @@
   "description": "SOLID Design Principles",
   "main": "SingleResponsibilityPrinciple.js",
   "scripts": {
-    "srp": "nodemon SingleResponsibilityPrinciple.js"
+    "srp": "nodemon SingleResponsibilityPrinciple.js",
+    "ocp": "nodemon OpenClosedPrinciple.js",
+    "lsp": "nodemon LiskovSubstitutionPrinciple.js",
+    "isp": "nodemon InterfaceSegregationPrinciple.js",
+    "dip": "nodemon DependencyInversionPrinciple.js"
   },
   "author": "",
   "license": "ISC",

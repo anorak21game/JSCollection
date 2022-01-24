@@ -340,6 +340,7 @@ console.log(article_compStyle.fontFamily);
 
 
 
+
 /* End */
 // Terminal$> .../npm run test
 // quit npm Strg^C

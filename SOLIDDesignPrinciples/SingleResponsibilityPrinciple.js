@@ -29,11 +29,6 @@ class Journal
     //     fs.writeFileSync(filename, this.toString());
     // }
 
-    // load(filename)
-    // {
-    //     //
-    // }
-
     // loadFromURL(url)
     // {
     //     //
@@ -43,7 +38,6 @@ Journal.count = 0;
 
 class PersistenceManager
 {
-
     preprocess(data)
     {
         //
